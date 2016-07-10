@@ -85,13 +85,16 @@ body { background-color: #fff; padding: 20px; }
 
 /* Feedback */
 
-#myQuiz .feedback { color: #efbe5e; margin-top: 50px; transition: opacity 1.5s, margin-top 1.5s;
+#myQuiz .feedback {
+  color: #efbe5e;
+  margin-top: 40px;
+  transition: opacity 1.5s, margin-top 1.5s;
   visibility:hidden; opacity: 0;
  }
 #myQuiz .feedback .btn { margin-top: 5px; }
 #myQuiz .feedback strong { color: #fff; }
 
-#myQuiz .answered .feedback { visibility: visible; opacity: 1; margin-top 10px; }
+#myQuiz .answered .feedback { visibility: visible; opacity: 1; margin-top: 10px; }
 
 /*  Results */
 
@@ -110,4 +113,4 @@ body { background-color: #fff; padding: 20px; }
 
 #myQuiz .active, #myQuiz .inactive { transition: left 1.5s ease-in-out; }
 #myQuiz .active { left: 40px; }
-#myQuiz .intro.inactive, #myQuiz.inactive.answered { left: -1350px; }
+#myQuiz .intro.inactive, #myQuiz .inactive.answered { left: -1350px; }
