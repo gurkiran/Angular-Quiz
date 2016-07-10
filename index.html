@@ -14,7 +14,7 @@
 				<div class='
 				{{($index === activeQuestion ? "on" : "off") }}
 				{{ myQuestion.questionState === "answered" ? "answered" : "unanswered"  }}
-				{{ myQuestion.correctness === "correct" ? "correct" : "incorrect" }}	
+				{{ myQuestion.correctness === "correct" ? "correct" : "incorrect" }}
 				'ng-repeat='myQuestion in myQuestions'></div>
 			</div>
 			<div class='intro {{ (activeQuestion > -1) ? "inactive" : "active"  }}'>
@@ -44,9 +44,9 @@
 					<div class='btn' ng-click='selectContinue()'>Continue</div>
 				</div>
 			</div>
-			<div class='results'>
+			<div class='results {{ (totalQuestions === activeQuestion) ? "active" : "inactive" }}'>
 				<h3>Results</h3>
-				<p>You scored X% by correct answering X of the total X questions.</p>
+				<p>You scored {{percentage}}% by correctly answering {{score}} of the total {{totalQuestions}} questions.</p>
 				<p>Use the links below to challenge your friends.</p>
 				<div class="share">
 					<a href="#" class="btn email">Email</a>
