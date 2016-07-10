@@ -11,8 +11,7 @@
 
 		$http.get('quiz_data.json').then(function(quizData){
 			$scope.myQuestions = quizData.data;
-			console.log(quizData);
-			console.log(myQuestions);
+			$scope.totalQuestions = $scope.myQuestions.length;
 		});
 
 
